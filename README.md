@@ -1,6 +1,6 @@
 # DNS-SD
 
-[![Build Status](https://travis-ci.org/brutella/hc.svg)](https://travis-ci.org/brutella/dnssd)
+Forked version of [brutella/dnssd](https://github.com/brutella/dnssd)
 
 This library implements [Multicast DNS][mdns] and [DNS-Based Service Discovery][dnssd] to provide zero-configuration operations. It lets you announce and find services in a specific link-local domain.
 
@@ -16,7 +16,7 @@ The following code creates a service with name "My Website._http._tcp.local." fo
 ```go
 import (
 	"context"
-	"github.com/brutella/dnssd"
+	"github.com/hkontrol/dnssd"
 )
 
 cfg := dnssd.Config{
@@ -67,10 +67,6 @@ hdl.UpdateText(map[string]string{"key1": "value1", "key2": "value2"}, rsp)
 
 There are examples in the `_cmd` directory to register services, resolve service instances and to browse for service types.
 
-## Conformance
-
-This library passes the [multicast DNS tests](https://github.com/brutella/dnssd/blob/36a2d8c541aab14895fc5492d5ad8ec447a67c47/_cmd/bct/ConformanceTestResults) of Apple's Bonjour Conformance Test.
-
 ## TODO
 
 - [ ] Support hot plugging
@@ -78,15 +74,6 @@ This library passes the [multicast DNS tests](https://github.com/brutella/dnssd/
 - [ ] Handle txt records case insensitive
 - [ ] Remove outdated services from cache regularly
 - [ ] Make sure that hostnames are FQDNs
-
-# Contact
-
-Matthias Hochgatterer
-
-Github: [https://github.com/brutella](https://github.com/brutella/)
-
-Twitter: [https://twitter.com/brutella](https://twitter.com/brutella)
-
 
 # License
 
