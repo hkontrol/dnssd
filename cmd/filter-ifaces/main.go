@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/brutella/dnssd"
+	"github.com/hkontrol/dnssd"
 	slog "log"
 	"os"
 	"os/signal"

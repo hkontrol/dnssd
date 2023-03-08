@@ -5,7 +5,7 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	"github.com/brutella/dnssd"
+	"github.com/hkontrol/dnssd"
 	"os"
 	"os/signal"
 	"strings"
